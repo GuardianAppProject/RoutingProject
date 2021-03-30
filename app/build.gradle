@@ -36,4 +36,21 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.6'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    
+    // Utilities for Maps SDK for Android (requires Google Play Services)
+    implementation 'com.google.maps.android:android-maps-utils:2.2.0'
+
+    // Alternately - Utilities for Maps SDK v3 BETA for Android (does not require Google Play Services)
+//    implementation 'com.google.maps.android:android-maps-utils-v3:2.2.0'
+
+    //OkHttp
+    implementation ("com.squareup.okhttp3:okhttp:3.12.12"){
+        force = true //API 19 support
+    }
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.12'
+
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
 }
